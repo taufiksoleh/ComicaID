@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MenuActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tabs"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark"
+        app:tabMode="fixed"
+        app:tabIconTint="@color/tab_icon_selector"
+        app:tabIndicator="@drawable/tab_background_selected"
+        app:tabIndicatorAnimationDuration="500"
+        app:tabIndicatorHeight="36dp"
+        app:tabGravity="center"
+        app:tabInlineLabel="true"
+        app:tabMinWidth="110dp"
+        app:tabIndicatorGravity="center"
+        app:tabSelectedTextColor="@color/colorAccent"
+        app:tabTextAppearance="@style/TabTextAppearance"
+        app:tabTextColor="@color/colorGrey" >
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:icon="@drawable/ic_round_home_24"
+            android:text="@string/tab_home"
+            android:layout_height="wrap_content"/>
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:icon="@drawable/ic_outline_shopping_cart_24"
+            android:text="@string/tab_cart"
+            android:layout_height="wrap_content"/>
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:icon="@drawable/ic_outline_person_outline_24"
+            android:text="@string/tab_profile"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.tabs.TabLayout>
+</RelativeLayout>

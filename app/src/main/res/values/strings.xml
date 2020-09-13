@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Comica ID</string>
+    <string name="title_activity_main">Comica ID</string>
+    <string name="title_home">Home</string>
+    <string name="title_cart">Cart</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_home">Home</string>
+    <string name="tab_cart">Cart</string>
+    <string name="tab_profile">Profile</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="title_search">Search</string>
+    <string name="title_new_release">New Release</string>
+</resources>
